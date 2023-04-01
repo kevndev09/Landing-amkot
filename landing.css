@@ -1,0 +1,57 @@
+/*Variables CSS*/
+
+:root{
+    --bg: #F5F5D9;
+    --shadows: rgb(136, 136, 136);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+#design {
+    height: 600px;
+}
+
+#section-card{
+    background-color: var(--bg);
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#section-card:focus .card{
+    animation: up 2s forwards ease-out;
+    
+}
+
+@keyframes up{
+    to{
+        transform: translateY(-15%);
+    }
+}
+
+.card{
+    background-color: whitesmoke;
+    width: 700px;
+    height: 500px;
+    box-shadow: 0px 0px 50px var(--shadows);
+    border-radius: 10px;
+}
+
+.w-700px{
+    background-color: black;
+}
+
+
+img{
+    width: 280px;
+    height: 380px;
+}
+
+#section-footer{
+    background-color: rgb(236, 236, 213);
+    height: 300px;
+}
